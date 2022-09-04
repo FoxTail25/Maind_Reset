@@ -100,16 +100,16 @@ main {
 /* <footer></footer> */
 footer {
     box-sizing: border-box;
-    /* display: flex; */
-    /* border: 1px solid blue; */
+    display: flex;
+    border: 1px solid blue;
     margin: 0;
     padding: 0;
     height: 10vh;
     width: 100vw;
     background: white;
-    position: static;
+    /* position: static; */
     /* bottom:0vh; */
-    z-index: 3;
+    /* z-index: 3; */
     
 }
 
