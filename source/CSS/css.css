@@ -1,0 +1,83 @@
+/* <body></body> */
+html {
+    padding: 0;
+    margin: 0;
+    background: green;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    background: red;
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* <header></header> */
+header {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100%;
+    background: silver;
+    /* position:static;  */
+    /* border: 1px solid blue; */
+}
+
+section {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 100vw;
+    background: silver;
+    
+    /* position: relative; */
+    /* border: 1px solid blue; */
+    
+}
+
+/* <aside></aside> */
+aside {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    margin: 0;
+    padding:0;
+    width: 20vw;
+    /* height: 8vh; */
+    /* position: relative; */
+}
+
+
+/* <main></main> */
+main {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    /* height: 100%; */
+    /* position: relative; */
+}
+
+
+/* <footer></footer> */
+footer {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100vw;
+    background: silver;
+    /* position: relative; */
+}

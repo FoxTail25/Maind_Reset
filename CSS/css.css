@@ -1,0 +1,131 @@
+/* <body></body> */
+html {
+    padding: 0;
+    margin: 0;
+    background: green;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    background: red;
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* <header></header> */
+header {
+    display: none;
+    box-sizing: border-box;
+    /* justify-content: space-around; */
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100%;
+    background: white;
+    position:fixed; 
+    top: 0;
+    z-index: 1;
+    /* border: 1px solid blue; */
+}
+
+.header__buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 2vh; */
+    /* padding: 2px; */
+    width: 85%;
+}
+
+section {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 100vw;
+    background: silver;
+    
+    /* position: sticky;
+    top: 20%; */
+    /* border: 1px solid blue; */
+    
+}
+
+/* <aside></aside> */
+aside {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    width: 20vw;
+    height: 100vh;
+    background: white;
+    position:fixed; 
+    top: 0vh;
+    z-index: 2;
+    /* border: 1px solid blue; */
+    /* height: 8vh; */
+    /* position: relative; */
+}
+
+
+/* <main></main> */
+main {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    height: 100vh;
+    /* background:rgba(245, 245, 245, 0.484) ; */
+    /* background: linear-gradient(160deg ,white 50%,silver 60%); */
+    /* border: 1px solid blue; */
+    /* height: 100%; */
+    position: relative;
+    top: 0vh;
+    left:20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+
+/* <footer></footer> */
+footer {
+    box-sizing: border-box;
+    /* display: flex; */
+    /* border: 1px solid blue; */
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100vw;
+    background: white;
+    position: static;
+    /* bottom:0vh; */
+    z-index: 3;
+    
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        display: flex;
+    }
+    aside {
+        display: none;
+        width: 0;
+    }
+    main {
+        position: relative;
+        left: 0;
+        width: 100vw;
+        padding: 10vh 0;
+    }
+
+}
