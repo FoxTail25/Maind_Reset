@@ -2,7 +2,7 @@
 html {
     padding: 0;
     margin: 0;
-    background: green;
+    background: aliceblue;
 }
 
 body {
@@ -42,7 +42,7 @@ header {
     justify-content: space-around;
     /* padding: 2vh; */
     /* padding: 2px; */
-    width: 85%;
+    width: 100%;
 }
 
 section {
@@ -64,24 +64,37 @@ section {
 aside {
     box-sizing: border-box;
     margin: 0;
-    padding:0;
+    padding: 10vh 0;
     width: 20vw;
     height: 100vh;
     background: white;
     position:fixed; 
     top: 0vh;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     /* border: 1px solid blue; */
     /* height: 8vh; */
     /* position: relative; */
 }
 
+.asaide__block_1 {
+    padding: 1vh 1vw;
+    color:silver;
+    height: 4vw;
+    width: 6vw;
+    border: 1px solid blue;
+}
+
 
 /* <main></main> */
 main {
+    
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 8vh 8vw;;
     width: 80vw;
     height: 100vh;
     /* background:rgba(245, 245, 245, 0.484) ; */
@@ -94,11 +107,12 @@ main {
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
+    font-size: 1.5rem;
 }
 
 
 /* <footer></footer> */
-footer {
+/* footer {
     box-sizing: border-box;
     display: flex;
     border: 1px solid blue;
@@ -107,15 +121,16 @@ footer {
     height: 10vh;
     width: 100vw;
     background: white;
-    /* position: static; */
-    /* bottom:0vh; */
-    /* z-index: 3; */
+    position: static;
+    bottom:0vh;
+    z-index: 3;
     
-}
+} */
 
 @media screen and (max-width: 720px) {
     header {
         display: flex;
+        min-height: 40px;
     }
     aside {
         display: none;
@@ -125,7 +140,9 @@ footer {
         position: relative;
         left: 0;
         width: 100vw;
-        padding: 10vh 0;
+        padding: 10vh 8vw;
+        font-size: 1.3rem;
+        
     }
 
 }
