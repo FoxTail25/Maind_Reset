@@ -1,0 +1,24 @@
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px 60px;
+}
+h2 {
+    padding: 20px 0px;
+}
+p { 
+    padding: 10px 40px;
+}
+div { 
+    padding: 10px 0px;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+}
