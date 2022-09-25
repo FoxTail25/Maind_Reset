@@ -61,6 +61,7 @@ button:active{
     height: 70px;
     background-color: #EBDF26;
     transition: ease-in-out .3s;
+    font-size: 0.5em;
 }
 
 

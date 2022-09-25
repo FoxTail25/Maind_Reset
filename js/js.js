@@ -17,6 +17,8 @@ let input = document.getElementById('answer');
 let answ = document.querySelector('.check');
 // доступ к фону задач (основному блоку)
 let main = document.querySelector('.main')
+
+// Новая задача
 function new_task () {
     let num1 = getRandomInRange(0, 100);
     let num2 = getRandomInRange(0, 100);
@@ -34,30 +36,40 @@ new_task()
 function check() {
 
     let z = input.value
-    // console.log(input.innerText,z,sum)
+
     if (z == sum+"") {
         answer('right')
-    } else if (z == "") {
+    } 
+    
+    else if (z == "") {
         answer('empty')
-    } else if (z != sum+'') {
+    } 
+
+    else if (z != sum+'') {
         answer('wrong')
     }
 }
 
 function answer (a) {
+    // ответ вырный
     if (a === "right") {
         answ.innerText = `Правильно ${sum}`
         input.style.backgroundColor = '#60F52F';
         main.style.backgroundColor = 'rgba(178,217,134,0.65';
-    } else if (a === 'empty') {
+    } 
+    // нет ответа
+    else if (a === 'empty') {
         answ.innerText = `Вы не ввели ответ`
         main.style.backgroundColor = 'rgba(240,235,98,0.65';
         input.style.backgroundColor = 'yellow';        
-    } else if (a === "wrong") {
+    } 
+    // ответ не верный
+    else if (a === "wrong") {
         answ.innerText = `К сожалению ваш ответ не верный.`
         main.style.backgroundColor = 'rgba(250,105,37,0.65';
         input.style.backgroundColor = 'red';
-    } else {
+    } 
+    else {
     answ.innerText = `Ответ ${sum}`;
     }
 }
