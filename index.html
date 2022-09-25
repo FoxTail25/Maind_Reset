@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <main>
+    <main class="main">
 
         <h1>
             Отвлечение внимания
         </h1>
+
         <h2>
             Иногда, мозг бывает сильно перегружен навязчивыми мыслями. Отвлечем от них своё внимание через решение
             простых математических задач.
@@ -31,7 +33,7 @@
             </div>
 
 
-            <input id="answer" type="number"  value="0" placeholder="ответ">
+            <input id="answer" type="number"  value="" placeholder="Ваш ответ">
 
             <div class="check">
                 ?
@@ -41,19 +43,20 @@
 
         <div class="buttons">
 
-            <button onclick="check()">
-                проверить
-            </button>
-
             <button onclick="answer()">
-                показать ответ
+                Показать ответ
             </button>
 
+            <button onclick="check()">
+                Проверить
+            </button>
+            
             <button onclick="new_task()">
-                следущая задача
+                Следущая задача
             </button>
 
         </div>
+
     </main>
 
 

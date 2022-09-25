@@ -22,26 +22,36 @@ function new_task () {
     sum = num1 + num2;
     let randomTaskText = `Сколько будет ${num1} + ${num2} = ?`
     
-    task.innerText = randomTaskText
-    
+    task.innerText = randomTaskText;
+    answ.innerText = '';
+    input.value = '';
 }
 new_task()
 
 function check() {
-    let z =input.value
-    
+
+    let z = input.value
     // console.log(input.innerText,z,sum)
     if (z == sum+"") {
-        answer(true)
-    } else {
-        console.log('no')
+        answer('right')
+    } else if (z == "") {
+        answer('empty')
+    } else if (z != sum+'') {
+        answer('wrong')
     }
-    
 }
 
 function answer (a) {
-    a ? answ.innerText = `Правильно ${sum}`:
+    if (a === "right") {
+        answ.innerText = `Правильно ${sum}`
+    } else if (a === 'empty') {
+        answ.innerText = `Вы не ввели ответ`
+        
+    } else if (a === "wrong") {
+        answ.innerText = `К сожалению ваш ответ не верный.`
+    } else {
     answ.innerText = `Ответ ${sum}`;
+    }
 }
 
 
