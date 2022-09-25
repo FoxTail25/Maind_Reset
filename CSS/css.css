@@ -16,7 +16,6 @@ main {
     background-color: rgba(255, 255, 255, 0.811);
     padding: 10px;
     display: flex;
-    margin-top: calc(100vh - var());
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -39,8 +38,9 @@ div {
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     align-items: center;
 }
 button {

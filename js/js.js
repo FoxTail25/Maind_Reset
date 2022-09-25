@@ -51,7 +51,8 @@ function answer (a) {
         main.style.backgroundColor = 'rgba(178,217,134,0.65';
     } else if (a === 'empty') {
         answ.innerText = `Вы не ввели ответ`
-        
+        main.style.backgroundColor = 'rgba(240,235,98,0.65';
+        input.style.backgroundColor = 'yellow';        
     } else if (a === "wrong") {
         answ.innerText = `К сожалению ваш ответ не верный.`
         main.style.backgroundColor = 'rgba(250,105,37,0.65';
