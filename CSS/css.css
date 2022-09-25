@@ -21,10 +21,14 @@ main {
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
+    transition: ease-in-out .9s;
 }
 
 p { 
     padding: 0px 40px;
+}
+input {
+    background-color: #EBDF26;
 }
 
 div { 
